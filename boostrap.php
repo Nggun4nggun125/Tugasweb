@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  </head>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+ </head>
 
  <style>
   .bordered {
@@ -24,7 +25,7 @@
    
     <a class="navbar-brand" href="#">
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Hacker_inside.jpg" width="50">  
+<img src="img/2.jpg" width="130" height="100">  
 
 Toko Grea Bakery
 </a> <buton class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,8 +73,7 @@ Toko Grea Bakery
 
     height: 80vh;
    
- background: url('img/1.jpg');
-
+ background: url('img/5.jpg');
                 
  background-size: cover;
    background-position: center;
@@ -86,9 +86,8 @@ Toko Grea Bakery
 .background
 background-color: skyblue;
 width: 100%;
-.bordered{
-     border: solid;
-}
+
+
 </style>
 <body>
 <!--banner-->
@@ -100,10 +99,47 @@ width: 100%;
 <p class="fs-4">Selamat datang di Grea bakery</p>
 <p class="container col-10 text-white">Setiap gigitan adalah sebuah kenangan manis yang takkan terlupakan.Dapatkan sekarang hanya di toko kami.</p>
 
-<button class="btn btn-outline-light mt-3 btn-lg">Reservasi</button>
+<button class="btn btn-outline-light mt-3 btn-lg" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservasi</button>
 </div>
 </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Formulir Reservasi</h1> 
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+<div class="mb-3">
+<label for="nama" class="form-label">Nama</label>
+<input type="text" class="form-control" id="nama">
+</div>
+<div class="mb-3">
+<label for="handphone" class="form-label">No. Handphone</label>
+<input type="number" id="nama" class="form-control">
+</div>
+<div class="mb-3">
+<label for="tanggal" class="form-label">Tanggal Reservasi</label>
+<input type="date" id="tanggal" class="form-control">
+</div>
+<div class="mb-3">
+<label for="jam" class="form-label">Jam</label>
+<input type="time" id="jam" class="form-control">
+</div>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+        <button type="button" class="btn btn-primary">Kirim</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="my-5 container col-10 col-sn-9 col-md-8 col-6">
 <h2 class="text center mb-5">kenapa harus belanja di Great Bekery</h2>
 <div class="accordion" id="accordionExample">
@@ -178,7 +214,7 @@ width: 100%;
 
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/1.jpg" class="d-block w-100" alt="...">
+      <img src="img/2.jpg" class="d-block w-100" alt="...">
 <div class="carousel-caption d-none d-md-block">
         <h5>Produk 1</h5>
         <p>Some representative placeholder content for the first slide.</p>
@@ -193,7 +229,7 @@ width: 100%;
 </div>
     <div class="carousel-item">
      
- <img src="img/2.jpg" class="d-block w-100" alt="...">
+ <img src="img/5.jpg" class="d-block w-100" alt="...">
 <div class="carousel-caption d-none d-md-block"> 
 <h5>Produk 3</h5> 
 <p>Some representative placeholder content for the first slide.</p> 
@@ -214,208 +250,342 @@ width: 100%;
 </div>
 </div>
 <div class="container-fluid py-5">
-     <div class="container">
-          <h2 class="text-center">Produk Terlaris</h2>
+<div class="container">
+<h2 class="text-center">Produk Terlaris</h2>
 
-          <div class="col-ig-6 col-md-8 d-block mx-auto mt-5">
-          <img src="img/2.jpg" class="img-thumbnail" alt="">
-          </div>
-       </div>
-    </div>
+<div class="col-lg-4 col-md-8 d-blok mx-auto mt-5" style="width: 500px; boder: solid;">
 
 
-      <div class="col-12 mb-4">
-           <figure class="text-center text-md-start">
-           <blockquote class="blockquote">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, consequatur.</p>
-            </blockquote>
-             <figcaption class="blockquote-footer">
-      Captain Tsubasa
-             </figcaption>
-         </figure>
+<img src="img/5.jpg" class="img-fluid img-thubnail" alt="">
+</div> 
+
+</div>
+</div>
+<div class="container-fluid py-5 bg-black">
+
+<div class="container text-white">
+<h2 class="text-center mb-5">Apa Kata Customer Kami</h2>
+<figure class="text-center">
+  <blockquote class="blockquote">
+    <p>A well-known quote, contained in a blockquote element.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Captain tsubasa
+  </figcaption>
+</figure>
+</div>
+</div>
+
+<div class="container-fluid py-5">
+<div class="container">
+<h2 class="text-center mb-5">Produk Kami</h2>
+ <div class="col-12">
+  <div class="row">
+ 
+  <div class="col-3">
+<ul class="list-group">
+    
+
+<a class="list-group-item list-group-item-primary d-flex justify-content-between align-items-center">
+Cake coklat
+<span class="badge bg-primary rounded-pill">10</span>
+</a>
+    <a class="list-group-item list-group-item-info d-flex justify-content-between align-items-center">
+Roti buaya bakar
+<span class="badge bg-primary rounded-pill">12</span>
+</a>
+
+<a class="list-group-item list-group-item-warning d-flex justify-content-between align-items-center">
+Roti pizza
+<span class="badge bg-primary rounded-pill">7</span>
+</a>
+<a class="list-group-item list-group-item-black d-flex justify-content-between align-items-center"> 
+Roti nanas
+<span class="badge bg-primary rounded-pill">9</span>
+ </a>
+<a class="list-group-item list-group-item-white d-flex justify-content-between align-items-center">
+cake coklat
+<span class="badge bg-primary rounded-pill">18</span>
+ </a>
+  </ul>
+</div>
+<div class="col-9">
+<div class="row">
+
+<div class="col-3">
+
+    <div class="card">
+   <img src="img/5.jpg" class="card-img-top" class="card-img-top" 	alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Cake Coklate</h5>
+    <p class="card-text">Cobalah Roti Coklat lezat dan lumer di mulut.</p>
+<div class="dropend">
+    <a href="#" class="btn btn-primary dropdown-toggle"data-bs-toggle="dropdown">Lihat</a>
+<ul class="dropdown-menu"> <li><a class="dropdown-item" href="#">Lihat Detail</a></li>
+<li><hr class="dropdown-divider"></li> 
+<li><a class="dropdown-item" href="#">Beli</a></li> 
+<li><hr class="dropdown-divider"></li>
+<li><a class="dropdown-item" href="#">Harga</a></li> 
+</ul>
+</div>
+  </div>
+</div>
+</div>
+
+<div class="col-3">
+    <div class="card">
+   <img src="img/5.jpg" class="card-img-top" class="card-img-top" 	alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Cake Coklate</h5>
+   
+ <p class="card-text">Cobalah Roti Coklat lezat dan lumer di mulut.</p>
+    <a href="#" class="btn btn-primary">Lihat</a>
+  </div>
+</div>
+</div>
+
+<div class="col-3">
+    <div class="card">
+   <img src="img/5.jpg" class="card-img-top" class="card-img-top" 	alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Cake Coklate</h5>
+    <p class="card-text">Cobalah Roti Coklat lezat dan lumer di mulut.</p>
+    <a href="#" class="btn btn-primary">Lihat</a>
+  </div>
+</div>
+</div>
+
+<div class="col-3">
+   <div class="card">
+   <img src="img/5.jpg" class="card-img-top" class="card-img-top" 	alt="...">
+ 
+
+ <div class="card-body">
+ 
+  <h5 class="card-title">Cake Coklate</h5>
+    <p class="card-text">Cobalah Roti Coklat lezat dan lumer di mulut.</p>
+    <a href="#" class="btn btn-primary">Lihat</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+ </div>
 </div>
 <div class="container-fluid py-5">
-       <div class="container">
+<div class="container">
 
-    <h2 class="text-center nb-7">produk kami</h2>
-<div class="col-12">
-<div class="row">
 
-<div class="col-lg-3 col-md-3">
-<div class="list-group">
-  <a class="list-group-item list-group-item-primary">Roti kering</a>
-  <a class="list-group-item list-group-item-secondary">Roti basa</a>
-  <a class="list-group-item list-group-item-warning">Cake</a>
-  <a class="list-group-item list-group-item-info">Kue</a>
-  <a class="list-group-item list-group-item-primary">Molen</a></div>
+<h2 class="text-center mb-5">
+Customer yang beruntung minggu ini<a tabindex="0" data-bs-trigger="focus"  class="btn btn-secondary"  data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" title="informasi" data-bs-content="Pengundian di lakukan setiap jum'at jam 17.00">
+  ?
+</a>
+
+</h2>
 
 </div>
-<div class="col-lg-9 col-md-9">
-<div class="row">
-  <div class="col-lg-3 col-md-3 col-sm-6">
-    <div class="card">
-  <img src="img/7.jpg"class="card-img-top" alt=".">
-  <div class="card-body">
- 
-   <h5 class="card-title">roti nanas</h5>
-    
-<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-   <p href="#" class="btn btn-primary">lihat</p>
-         </div>
-       </div>
-     </div>
-  <div class="col-lg-3 col-md-3 col-sm-6">
-
-  <div class="card">
-
- <img src="img/7.jpg"class="card-img-top" alt=".">
-  <div class="card-body">
- 
-   <h5 class="card-title">roti nanas</h5>
-    
-<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-   <p href="#" class="btn btn-primary">lihat</p>
-         </div>
-       </div>
-     </div>
-     <div class="col-lg-3 col-md-3 col-sm-6">
-    <div class="card">
-  <img src="img/7.jpg"class="card-img-top" alt=".">
-  <div class="card-body">
- 
-   <h5 class="card-title">roti nanas</h5>
-    
-<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-   <p href="#" class="btn btn-primary">lihat</p>
-         </div>
-       </div>
-    </div>
-    <div class="col-lg-3 col-md-3 col-sm-6">
-    <div class="card">
-  <img src="img/7.jpg"class="card-img-top" alt=".">
-  <div class="card-body">
- 
-   <h5 class="card-title">roti nanas</h5>
-    
-<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-   <p href="#" class="btn btn-primary">lihat</p>
-             </div>
-           </div>
-         </div>
-       </div>
-      </div>
-          </div>
-             </div>
-                 </div>     
-                     </div>
 </div>
 
-<div class="container-fluid py-5 bg-black">
-     <div class="container text-white">
-          <h2 class="text-center mb-5">Apa Kata Customer Kami</h2>
-
-
- <div class="col-14 md-4">
-    <figure class="text-center text-md-start">
-    <blockquote class="blockquote">
-    <p>lorem ipsum dolor sit amet consectetur adipisicing elit.quo,consequatur.</p>
-   
-
-
-
-     </blockquote>
-    <figcaption class="blockquote-footer">
-captain tsubasa
-  
- </figcaption>
-
-  </figure>
-    </div>  
-  </div>
-</div>    
-<div class="container-fluid py-5 bg-dark text-light">
-  <div class="container">
-<h2 class="text-center mb-5">customer beruntung minggu ini</h2>
-
- <table class="table table-bordered border-warning">
-<thead>
-<tr class="table-primary">
-     <th>#</th>
-      <th>nama</th>
-      <th>no. Handphone</th>
-      <th>tanggal pembelian </th>
-      <th>no. struk</th>
-      <th>no. undian</th>
-      <th>hadiah</th>
-
-           </tr>
-       </thead>
-     <tbody>
-
-
-<tr>
-  
-     <th>1</th>
-    <td>mark</td>
-    <td>0813 4567xxxx</td>
-    <td>12 juli 2021</td>
-    <td>01932211</td>
-    <td>021</td>
-   <td>1 paket molen</td>
-</tr>
- 
-
-
+<div class="table-responsive">
+<table class="table table-striped-columns table table-hover table bordered border-black ">
+  <thead>
     <tr>
-         <th>2</th>
-       <td>jacob</td>
-      <td>0813 4565xxxx</td>    
-     <td>11 juni 2021</td>
-    <td>01932244</td>
-       <td>023</td>
-    <td>1 paket molen</td>
-  </tr>
+      <th scope="col">No</th>
+     
+      <th scope="col">Nama</th>
+       <th scope="col">No.Handphone</th>
+      <th scope="col">Tanggal Pembelian</th>
+      <th scope="col">No.Struk</th>
+      <th scope="col">No.Undian</th>
+      <th scope="col">Hadiah</th>
+    </tr>
+  </thead>
+ <tbody>
+    <tr class="table-info table bordered border-black">
+      <td>1</td>
+      <td>juan</td>
+<td>08317657xxxx</td>
+  <td>12 juni 2021</td>
+      <td>01932211</td>
+      <td>014</td>
+ <td>1 paket roti basah</td>
+    </tr>
+<tr class="table-success table bordered border-black">
+      <td>2</td>
+      <td>fendy</td>
+      <td>08317658xxxx</td>
+     
+     <td>13 juni 2021</td>
+      <td>01932214</td>
+      <td>017</td>
+ <td>1 cake coklat</td>
+    </tr>
+<tr class="table-secondary table bordered border-black">
+      <td>3</td>
+      <td>jamal</td>
+      <td>08317656xxxx</td>
+      <td>30 agustus 2021</td>
+      <td>01932219</td>
+      <td>041</td>
+ <td>1 paket molen</td>
+    </tr>
 
-    <tr>
-<th>3</th>
-  <td>jojo</td>
-   <td>0813 4511xxxx</td>
-   <td>16 juni 2021</td>
-  <td>01932112</td>
-   <td>011</td>
-   <td>1 roti basah</td>
+<tr class="table-warning table bordered border-black">
+      <th>4</th>  
+      <th>siti</td>
+      <td>08317689xxxx</td>
+     
+       <td>24 juni 2021</td>
+       <td>01932212</td>
+        <td>019</td>
+      <td>1 paket cake</td>
 </tr>
+ <tr class="table-primary table bordered border-black">
+     <th>5</th>
+      <td>pandi</td>
+      <td>08317676xxxx</td>
+      <td>25 juli 2021</td>
+       <td>01932213</td>
+      <td>030</td>
+       <td>1 paket kue ultah</td>
+    </tr>
+<tr class="table-white table bordered border-black">
+     <th>6</th>
+      <td>sutaryo</td>
+      <td>08317654xxxx</td>
+      <td>27 juni 2021</td>
+      <td>01932226</td>
+      <td>019</td>
+      <td>1 paket donat</td>
+    </tr>
 
 
-<tr>
-
-<th>4</th>
-   <td>joen</td>
-   <td>0813 4561xxxx</td>
- <td>12 juni 2021</td>
-   <td>019311211</td>
-   <td>026</td>
-   <td>1 paket kering</td>
-</tr>
-
-
-<tr>  
-      <th>5</th>
-         <td>estes</td>
-             <td>0813 4515xxxx</td>
-         <td>12 juni 2021</td>
-     <td>01232211</td>
-   <td>042</td>
- <td>1 paket kue ultah</td>
-       </tr>
-    </tbody>
-  </table>
-      </div>
-    
+ </tbody>
+</table>
 </div>
-   </div>
+
+
+
+<div class="container-fluid py-5 bg-black text-white">
+<div class="container">
+<h2 class="text-center mb-4">Hubungi Kami</h2>
+<div class="offset-lg-2 col-lg-8">
+<div class="alert alert-success alert-dismissible mb-4" id="myAlert">
+<i class="bi bi-check2-square"></i> Formulir Berhasil Dikirim. klik <a herf="http://google.com"class="alert-link">disini</a> untuk melihat
+
+
+
+<button type="button" class="btn-close" data-base-dismiss="alert" aria-label="close"></button>
+</div>
+<form>
+<div class="mb-3">
+
+<div class="row">
+<div class="col-lg-6">
+<label for="namadepan">nama depan</label>
+
+<input type="text" id="namadepan" class="form-control"  autocomplete="off">
+</div>
+
+<div class="col-lg-6">
+<label for="namabelakang">nama belakang</label>
+<input type="text" id="namabelakang" class="form-control" autocomplete="off">
+</div>
+</div>
+</div>
+<div class="mb-3">
+<label for="username">Username</label>
+<div class="input-group">
+<input type="text" class="form-control">
+<span class="input-group-text">@</span>
+<input type="text" class="form-control">
+<span class="input-group-text">.com</span>
+</div>
+</div>
+<div class="mb-3">
+<label for="email" class="form-label">Email</label>
+
+<input type="email" id="email" class="form-control" autocomplete="off">
+<label class="form-text">*email anda tidak akan kami sebar luaskan</label>
+</div>
+<div class="mb-3">
+<label for="tingkaturgensi" class="form-label">Tingkat Urgensi</label>
+<select class="form-select" id="tingkaturgensi">
+<option value="penting">Penting</option>
+<option value="normal">Normal</option>
+<option value="tidak penting">Tidak Penting</option>
+</select>
+</div>
+
+<div class="mb-3 form-check">
+<input type="radio" class="form-check-input" id="komplain" name="kategori">
+<label for="komplain" class="form-check-label">Komplain</label>
+</div>
+<div class="mb-3 form-check">
+<input type="radio" class="form-check-input" id="saran" name="kategori">
+<label for="saran" class="form-check-label">Saran</label>
+</div>
+
+<div class="mb-3">
+<label for="deskripsi"class="form-label">Deskripsi</label>
+<textarea id="Deskripsi" class="form-control" cols="30" rows="10"></textarea>
+</div>
+<div class="mb-3">
+ <button type="button" onclick="simpanform()" id="btnkirim" class="btn btn-primary w-100">Kirim</button>
+<button type="button" id="btnloading" class="btn btn-primary w-100 mt-2">
+<div class="spinner-border spiner-border-sm" role="status">
+</div>
+</button>
+
+</div>
+</from>
+
+</div>
+</div>
+</div>
 
  <h1>Lezat dan Nikmat</h1>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-  </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+ 
+<script>
+var popoverTriggerList = [].slice.call (document.querySelectorAll('[data-bs-toggle="popover"]'))
+
+var popoverList = popoverTriggerList.map
+(Function (popoverTriggerEl) {
+return new bootstrap.Popover(popoverTriggerEl)
+)}
+
+var myAlert = document.getElemenById('myAlert');
+
+myAlert.style.display = 'none'
+
+function myFunction(){
+ myAlert.style.display = 'block'
+}
+var btnkirim=document.getElemenById('btnkirim');
+var btnloading=document.getElemenById('btnloading');
+btnloading.style.display= 'none'
+function startProses(){
+btnkirim.style.display= 'none'
+btnloading.style.display= 'block'
+}
+function endProses(){
+btnloading.style.display= 'none'
+btnkirim.style.display= 'block'
+}
+function simpanform(){
+startProses();
+
+setTimeout(function(){
+endproses(); myFunction()
+}, 3000);
+}
+
+</script>
+
+ </body>
 </html>
